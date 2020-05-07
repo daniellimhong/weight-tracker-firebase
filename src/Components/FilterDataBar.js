@@ -6,15 +6,15 @@ const FilterDataBar = (props) => {
 
   return (
     <Bar>
-      <SubBar>
+      {/* <SubBar> */}
           {/* Post-Mvp - filtering data by month or year */}
-        <FilterButton>Year</FilterButton>
+        {/* <FilterButton>Year</FilterButton>
         <FilterButton></FilterButton>
-        <FilterButton></FilterButton>
+        <FilterButton></FilterButton> */}
         <AddLogButton onClick={() => {
             setIsAdd(!isAdd)
             }}>Add Log</AddLogButton>
-      </SubBar>
+      {/* </SubBar> */}
     </Bar>
   );
 };
@@ -24,8 +24,8 @@ const Bar = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 2em;
-  border: 1px solid black;
+  margin-bottom: 1em;
+//   border: 1px solid black;
 `;
 
 const SubBar = styled.div`
@@ -34,6 +34,6 @@ const SubBar = styled.div`
   justify-content: space-between;
 `;
 
-const FilterButton = styled.button``;
+// const FilterButton = styled.button``;
 
 const AddLogButton = styled.button``;

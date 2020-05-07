@@ -6,10 +6,11 @@ const HeaderContainer = styled.header`
     height: 100px; // change later
     // border: 1px solid black;
     text-align: center;
+    margin: 0;
+
 `
 
 const Heading = styled.h1`
-
 `
 
 

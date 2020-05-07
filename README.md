@@ -1,5 +1,13 @@
 # Personal Weight Tracker
 
+## To Do:
+- hook up firebase
+    - add logs working now
+    - get from firebase database
+- filter by month, week, year?
+- style
+- deploy
+
 ## Components 
 - Header 
     - Add day/track 

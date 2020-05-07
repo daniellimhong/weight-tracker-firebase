@@ -6,11 +6,14 @@ import TrackingLog from "./Components/TrackingLog";
 import AddLogModal from "./Components/AddLogModal";
 import dummyData from "./dummyData";
 import "./App.css";
+import { useFirebase } from "./Components/Firebase/FirebaseContext";
 
 function App() {
   const [data, setData] = useState([]);
   const [isAdd, setIsAdd] = useState(false);
+  const firebase = useFirebase();
 
+  console.log(firebase)
   // useEffect, render dummy data
   useEffect(() => {
     setData(dummyData);
@@ -19,8 +22,13 @@ function App() {
 
   const handleAddClick = (log) => {
     setData([...data, log]); //fix for firebase
+    firebase.logs().push(log, () => {
+      console.log("Log successfully tracked!")
+    })
     setIsAdd(false);
   };
+
+  // console.log(process.env.REACT_APP_API_KEY)
 
   return (
     <div className="App">
