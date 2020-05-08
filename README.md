@@ -1,12 +1,10 @@
 # Personal Weight Tracker
 
-## To Do:
-- hook up firebase
-    - add logs working now
-    - get from firebase database
-- filter by month, week, year?
-- style
-- deploy
+View Live Demo [Here](https://daniellimhong.github.io/weight-tracker-firebase/)
+
+## Post-MVP Additions for next time
+- filter and render data based on month, weeks, and maybe year?
+- styling
 
 ## Components 
 - Header 
@@ -32,6 +30,7 @@
 - firebase (NoSQL)
 - chartjs2
 - styled components
+- react-modal 
 
 ## Data Schema
 ```js
@@ -45,6 +44,6 @@
 ```
 
 ### Resources
-https://github.com/bradtraversy/reactcharts/blob/master/src/components/Chart.js
-https://github.com/bradtraversy/reactcharts/blob/master/src/App.js
-https://www.chartjs.org/docs/latest/charts/line.html
+- https://github.com/bradtraversy/reactcharts/blob/master/src/components/Chart.js
+- https://github.com/bradtraversy/reactcharts/blob/master/src/App.js
+- https://www.chartjs.org/docs/latest/charts/line.html
