@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bf9f5d938c9d03334416b88a140f8f01",
+    "revision": "be8625b9c23af0f05bf55ca66271d07b",
     "url": "/weight-tracker-firebase/index.html"
   },
   {
-    "revision": "e7b1f4e933f5a333a51c",
-    "url": "/weight-tracker-firebase/static/css/main.a6980862.chunk.css"
+    "revision": "79f082409e4e6ce8f933",
+    "url": "/weight-tracker-firebase/static/css/main.88948e48.chunk.css"
   },
   {
     "revision": "a465732d3863e8a040e2",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/weight-tracker-firebase/static/js/2.3eb49fc7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e7b1f4e933f5a333a51c",
+    "revision": "79f082409e4e6ce8f933",
     "url": "/weight-tracker-firebase/static/js/main.fcb8ca8c.chunk.js"
   },
   {

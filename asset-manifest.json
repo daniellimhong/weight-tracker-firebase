@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/weight-tracker-firebase/static/css/main.a6980862.chunk.css",
+    "main.css": "/weight-tracker-firebase/static/css/main.88948e48.chunk.css",
     "main.js": "/weight-tracker-firebase/static/js/main.fcb8ca8c.chunk.js",
     "main.js.map": "/weight-tracker-firebase/static/js/main.fcb8ca8c.chunk.js.map",
     "runtime-main.js": "/weight-tracker-firebase/static/js/runtime-main.1047b368.js",
@@ -8,15 +8,15 @@
     "static/js/2.3eb49fc7.chunk.js": "/weight-tracker-firebase/static/js/2.3eb49fc7.chunk.js",
     "static/js/2.3eb49fc7.chunk.js.map": "/weight-tracker-firebase/static/js/2.3eb49fc7.chunk.js.map",
     "index.html": "/weight-tracker-firebase/index.html",
-    "precache-manifest.844da29c905d704a813d444af8a795a1.js": "/weight-tracker-firebase/precache-manifest.844da29c905d704a813d444af8a795a1.js",
+    "precache-manifest.cecec2fffd0d1b781134b122ad054f98.js": "/weight-tracker-firebase/precache-manifest.cecec2fffd0d1b781134b122ad054f98.js",
     "service-worker.js": "/weight-tracker-firebase/service-worker.js",
-    "static/css/main.a6980862.chunk.css.map": "/weight-tracker-firebase/static/css/main.a6980862.chunk.css.map",
+    "static/css/main.88948e48.chunk.css.map": "/weight-tracker-firebase/static/css/main.88948e48.chunk.css.map",
     "static/js/2.3eb49fc7.chunk.js.LICENSE.txt": "/weight-tracker-firebase/static/js/2.3eb49fc7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1047b368.js",
     "static/js/2.3eb49fc7.chunk.js",
-    "static/css/main.a6980862.chunk.css",
+    "static/css/main.88948e48.chunk.css",
     "static/js/main.fcb8ca8c.chunk.js"
   ]
 }
