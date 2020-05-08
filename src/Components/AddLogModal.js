@@ -81,24 +81,32 @@ const Body = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  // background-color: white;
   // choose color
   // background-color: ;
 `;
 
 const Form = styled.form`
-  border: 1px solid black;
+
   width: 800px;
   height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  // flex-wrap: wrap;
-  // background-color: ;
+  border-radius: 35px;
+  background-color: white;
+  * {
+    color: black;
+  }
 
   @media (max-width: 768px) {
     width: 95%;
   }
+
+  -webkit-box-shadow: 4px 4px 12px -3px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 4px 4px 12px -3px rgba(0, 0, 0, 0.63);
+  box-shadow: 4px 4px 12px -3px rgba(0, 0, 0, 0.63);
 `;
 const Input = styled.input`
   width: 25%;
