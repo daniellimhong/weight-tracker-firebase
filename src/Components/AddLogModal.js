@@ -3,14 +3,7 @@ import styled from "styled-components";
 
 const AddLogModal = (props) => {
   const { isAdd, setIsAdd, newId, handleAddClick } = props;
-  //   const [newLog, setNewLog] = useState({
-  //     id: newId,
-  // date: "",
-  // weight: 0,
-  // calories: 0,
-  // activity: false,
-  // description: "",
-  //   });
+  const [password, setPassword] = useState("");
   const [weight, setWeight] = useState(0);
   const [calories, setCalories] = useState(0);
   const [didActivity, setActivity] = useState(false);
@@ -52,22 +45,29 @@ const AddLogModal = (props) => {
           placeholder="Notes"
           onChange={(event) => setDescription(event.target.value)}
         />
-        <button
-            type="submit"
-          onClick={() =>
-            handleAddClick({
-              id: newId,
-              date: currentDate,
-              weight: weight,
-              calories: calories,
-              activity: didActivity,
-              description: description,
-            })
-          }
-        >
+        <Input
+          placeholder="Password"
+          type="password"
+          onChange={(event) => setPassword(event.target.value)}
+        />
+        <button type="submit" onClick={() => {
+          password === 'danielhong'
+          ? handleAddClick({
+            id: newId,
+            date: currentDate,
+            weight: weight,
+            calories: calories,
+            activity: didActivity,
+            description: description,
+          })
+          : 
+          alert('Incorrect password! Try again.')
+        }}>
           Add
         </button>
-        <button type="button" onClick={() => setIsAdd(!isAdd)}>Cancel</button>
+        <button type="button" onClick={() => setIsAdd(!isAdd)}>
+          Cancel
+        </button>
       </Form>
     </Body>
   );

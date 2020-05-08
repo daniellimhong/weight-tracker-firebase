@@ -4,7 +4,6 @@ import FilterDataBar from "./Components/FilterDataBar";
 import Header from "./Components/Header";
 import TrackingLog from "./Components/TrackingLog";
 import AddLogModal from "./Components/AddLogModal";
-import dummyData from "./dummyData";
 import "./App.css";
 import { useFirebase } from "./Components/Firebase/FirebaseContext";
 
@@ -13,12 +12,24 @@ function App() {
   const [isAdd, setIsAdd] = useState(false);
   const firebase = useFirebase();
 
-  console.log(firebase)
-  // useEffect, render dummy data
   useEffect(() => {
-    setData(dummyData);
-    // console.log(data);
+    firebase.logs().once('value', (snapshot) => {
+      const databaseResponse = snapshot.val();
+      setData(formatData(databaseResponse))
+    })
+    console.log(data);
   }, []);
+
+  const formatData = inputData => {
+    const arr = [];
+    
+    for (let log in inputData){
+      const val = inputData[log];
+      val['log'] = log;
+      arr.push(val)
+    }     
+    return arr;
+  }
 
   const handleAddClick = (log) => {
     setData([...data, log]); //fix for firebase
@@ -27,18 +38,21 @@ function App() {
     })
     setIsAdd(false);
   };
-
-  // console.log(process.env.REACT_APP_API_KEY)
+  const sortData = data => {
+   const copy = [...data];
+    return copy.sort((a, b) => b.id - a.id)
+  }
+  const sortedData = sortData(data);
 
   return (
     <div className="App">
       {!isAdd ? (
         <>
           <Header />
-          <FilterDataBar isAdd={isAdd} setIsAdd={setIsAdd} />
           {/* { isAdd ? "true" : "false"}  */}
           <ChartDisplay data={data} />
-          <TrackingLog data={data} />
+          <FilterDataBar isAdd={isAdd} setIsAdd={setIsAdd} />
+          <TrackingLog data={sortedData} />
         </>
       ) : (
         <AddLogModal

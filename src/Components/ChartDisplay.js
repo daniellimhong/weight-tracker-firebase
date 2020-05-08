@@ -58,7 +58,17 @@ const ChartDisplay = (props) => {
 export default ChartDisplay;
 
 const GraphContainer = styled.div`
-  width: 100vw;
+  margin: 0 auto;
+  width: 96vw;
   height: 50vh;
-  //   border: 2px solid black;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  margin-bottom: 1em;
+  -webkit-box-shadow: 4px 4px 12px -3px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 4px 4px 12px -3px rgba(0, 0, 0, 0.63);
+  box-shadow: 4px 4px 12px -3px rgba(0, 0, 0, 0.63);
+
+  @media (min-width: 768px) {
+    width: 70vw;
+  }
 `;

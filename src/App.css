@@ -3,8 +3,13 @@
 
 * {
   font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
+
+button, h3 {
+  color: black;
 }
 
 body {
-  /* background-color: grey; */
+  background-color: #00aeef;
 }
